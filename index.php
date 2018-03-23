@@ -2,7 +2,7 @@
 <html lang="es">
 <head> 
     <meta charset="utf-8">
-    <title>Scorts Premium</title>
+    <title>Prepagapp</title>
     <?php include "./partes/head.php"; ?>
 </head>
 
