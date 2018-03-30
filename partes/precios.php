@@ -8,17 +8,17 @@
 
                 <div class="row counters">
 
-                    <div class="col-lg-4 col-6 text-center">
+                    <div class="col-lg-4 col-12 text-center">
                         <span>$</span><span data-toggle="counter-up">80.000</span>
                         <p>Servicio Basico</p>
                     </div>
 
-                    <div class="col-lg-4 col-6 text-center">
+                    <div class="col-lg-4 col-12 text-center">
                         <span>$</span><span data-toggle="counter-up">160.000</span>
                         <p>Servicio Normal</p>
                     </div>
 
-                    <div class="col-lg-4 col-6 text-center">
+                    <div class="col-lg-4 col-12 text-center">
                         <span>$</span><span data-toggle="counter-up">250.000</span>
                         <p>Servicio Premium</p>
                     </div>

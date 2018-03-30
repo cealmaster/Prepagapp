@@ -7,25 +7,23 @@
                 <div class="carousel-inner" role="listbox">
 
                     <div class="carousel-item active">
-                        <div class="carousel-background"><img src="img/intro-carousel/1.jpg" alt=""></div>
+                        <div class="carousel-background"><img class="img-fluid" src="img/intro-carousel/1.jpg" alt="prepago desnuda"></div>
                         <div class="carousel-container">
                             <div class="carousel-content">
-                                <h2>Todas tus necesidades sexuales</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat.</p>
-                                <a href="#featured-services" class="btn-get-started scrollto">Empecemos</a>
+                                <h2>Prepagos y Putas a domicilio</h2>
+                                <p>LLegamos a cualquier parte de bogota, con las mejores chicas del mercado.</p>
+                                <a href="#featured-services" class="btn-get-started scrollto">Mira nuestras prepagos</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="carousel-item">
-                        <div class="carousel-background"><img src="img/intro-carousel/2.jpg" alt=""></div>
+                        <div class="carousel-background"><img class="img-fluid" src="img/intro-carousel/2.jpg" alt="foto que simboliza profesionalidad"></div>
                         <div class="carousel-container">
                             <div class="carousel-content">
                                 <h2>Somos profesionales</h2>
-                                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
-                                    debitis aut.</p>
-                                <a href="#featured-services" class="btn-get-started scrollto">Empecemos</a>
+                                <p>Seguridad y confianza a la hora de seleccionar cualquiera de nuestras selectas chicas.</p>
+                                <a href="#featured-services" class="btn-get-started scrollto">Mira nuestras prepagos</a>
                             </div>
                         </div>
                     </div>
