@@ -44,35 +44,28 @@
 			<div class="section-header">
 				<h3>Registrate</h3>
 			</div>
+			
 			<div class="form">
 				<form action="" method="POST">
 					<div class="form-group">
-						<label for="idCliente">Ingresa tu id:</label>
-						<input type="number" class="form-control" placeholder="id" name="idCliente">
+						<label for="nombres">Ingresa tu nombre :</label>
+						<input type="text" class="form-control" placeholder="Ingrese sus nombres" name="nombres">
+					</div>
+					<div class="form-group">
+						<label for="apellidos">Ingresa tu Apellido :</label>
+						<input type="text" class="form-control" placeholder="Ingrese sus apellidos" name="apellidos">
+					</div>
+					<div class="form-group">
+						<label for="nickname">Ingresa tu nombre de usuario:</label>
+						<input type="text" class="form-control" placeholder="Ingrese su nickname" name="nickname">
+					</div>
+					<div class="form-group">
+						<label for="contrasena">Ingresa tu Contraseña:</label>
+						<input type="password" class="form-control" placeholder="Ingrese su contraseña" name="contrasena">
 					</div>
 					<div class="form-group">
 						<label for="celular">Ingresa tu celular:</label>
 						<input type="number" class="form-control" placeholder="celular" name="celular">
-					</div>
-					<div class="form-group">
-						<label for="">Ingresa tu :</label>
-						<input type="text" class="form-control" placeholder="Ingrese sus nombres" name="nombres">
-					</div>
-					<div class="form-group">
-						<label for="">Ingresa tu :</label>
-						<input type="text" class="form-control" placeholder="Ingrese sus apellidos" name="apellidos">
-					</div>
-					<div class="form-group">
-						<label for="">Ingresa tu :</label>
-						<input type="number" class="form-control" placeholder="telefono fijo" name="telefono">
-					</div>
-					<div class="form-group">
-						<label for="">Ingresa tu :</label>
-						<input type="text" class="form-control" placeholder="Ingrese su nickname" name="nickname">
-					</div>
-					<div class="form-group">
-						<label for="">Ingresa tu :</label>
-						<input type="password" class="form-control" placeholder="Ingrese su contraseña" name="contrasena">
 					</div>
 					<input type="submit" name="login" value="iniciar Sesion">
 					<p>Ya tienes una cuenta? <a href="inicio-sesion.php" >Entra Aquí!</a>!</p>

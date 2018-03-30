@@ -1,8 +1,8 @@
 <?php 
 	function imprimirPutas(){
-		$conexion=mysqli_connect("localhost","root","","prueba") or
+		$conexion=mysqli_connect("localhost","root","","prepagapp") or
     	die("Problemas con la conexión");
-        $registros=mysqli_query($conexion,"select nombres, linkfotoperfil, descripcion from puta") or die("Problemas en el select:".mysqli_error($conexion));
+        $registros=mysqli_query($conexion,"select nombreputa, linkfotoperfil, descripcion from puta") or die("Problemas en el select:".mysqli_error($conexion));
         $numeroRegistros = mysqli_num_rows($registros);
         $contador=0;
         if ($numeroRegistros!=0) {

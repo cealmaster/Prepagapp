@@ -16,13 +16,13 @@
 			if (!empty($_POST['nickname']) && !empty($_POST['contrasena'])) {
 				$usuario= $_POST['nickname'];
 				$password= $_POST['contrasena'];
-				$registros=mysqli_query($conexion,"select nombre, nicknamecliente, contrasenacliente, telefonocliente from cliente where nicknamecliente= '$_REQUEST[nickname]' and contrasenacliente='$_REQUEST[contrasena]'") or die("Problemas en el select:".mysqli_error($conexion));
+				$registros=mysqli_query($conexion,"select nombrecliente, nicknamecliente, contrasenacliente, telefonocliente from cliente where nicknamecliente= '$_REQUEST[nickname]' and contrasenacliente='$_REQUEST[contrasena]'") or die("Problemas en el select:".mysqli_error($conexion));
 				$numeroRegistros = mysqli_num_rows($registros);
 				if ($numeroRegistros!=0) {
 					while ($reg=mysqli_fetch_array($registros)){
 			  			$dbnickname = $reg['nicknamecliente'];
 			  			$dbcontrasena = $reg['contrasenacliente'];
-			  			$dbnombre = $reg['nombre'];
+			  			$dbnombre = $reg['nombrecliente'];
 					}
 					mysqli_close($conexion);
 					if ($usuario == $dbnickname && $password == $dbcontrasena) {
