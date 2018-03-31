@@ -2,8 +2,8 @@
             <div class="container">
 
                 <header class="section-header">
-                    <h3>Solo las mejores putas</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h3>Solo las mejores</h3>
+                    <p>Se efectuan filtros en la seleccion para garantizar la mejor calidad de servicio y atencion.</p>
                 </header>
 
                 <div class="row about-cols">
@@ -16,7 +16,8 @@
                             </div>
                             <h2 class="title"><a href="#">Tus deseos mas calientes</a></h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Todas nuestras prepagos tienen especificados los servicios que ofrecen, asi podras satisfacer cualquier deseo que tengas en mente, con nuestras lascivas chicas.
+                                Ademas, tenemos servicios para la mayor parte de zonas de bogota, para que no tengas que desplazarte.
                             </p>
                         </div>
                     </div>
@@ -29,7 +30,7 @@
                             </div>
                             <h2 class="title"><a href="#">Diferentes medios de pago</a></h2>
                             <p>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                Aceptamos efectivo en el momento de llegada y antes de efectuar el servicio por seguridad de nuestras chicas, ademas tenemos servicio para tarjeta de credito (para acceder a este servicio se debe pagar en el momento de realizada la orden, no nos imaginamos a nuestras chicas cargando un datafono :p ).
                             </p>
                         </div>
                     </div>
@@ -42,7 +43,7 @@
                             </div>
                             <h2 class="title"><a href="#">Estrictos en la seleccion</a></h2>
                             <p>
-                                Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+                                Se realizaron numerosos filtros de seleccion de nuestras chicas por tu seguridad y la de ellas. Garantizamos total satisfaccion sin importar a cual escogas, con total limpieza y cuidado. 
                             </p>
                         </div>
                     </div>

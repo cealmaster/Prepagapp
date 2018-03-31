@@ -2,25 +2,25 @@
             <div class="container">
 
                 <header class="section-header">
-                    <h3>Precios desde</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                    <h3>Precios de tienda desde</h3>
+                    <p>Mira nuestra estadistica de precios, para que tomes la decision dependiendo de tu presupuesto</p>
                 </header>
 
                 <div class="row counters">
 
                     <div class="col-lg-4 col-12 text-center">
-                        <span>$</span><span data-toggle="counter-up">80.000</span>
-                        <p>Servicio Basico</p>
+                        <span>$</span><span data-toggle="counter-up">30.000</span>
+                        <p>Licoreria</p>
                     </div>
 
                     <div class="col-lg-4 col-12 text-center">
-                        <span>$</span><span data-toggle="counter-up">160.000</span>
-                        <p>Servicio Normal</p>
+                        <span>$</span><span data-toggle="counter-up">5.000</span>
+                        <p>juguetes</p>
                     </div>
 
                     <div class="col-lg-4 col-12 text-center">
-                        <span>$</span><span data-toggle="counter-up">250.000</span>
-                        <p>Servicio Premium</p>
+                        <span>$</span><span data-toggle="counter-up">40.000</span>
+                        <p>Disfraces</p>
                     </div>
 
                 </div>

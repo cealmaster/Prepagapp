@@ -21,7 +21,7 @@
 	<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
 	<!-- Main Stylesheet File -->
-	<link href="css/style2.css" rel="stylesheet">
+	<link href="css/prepagapp.css" rel="stylesheet">
 </head>
 <body>
   <?php include './partes/header.php'?>

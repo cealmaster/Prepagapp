@@ -11,32 +11,32 @@
                     <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
                         <div class="icon"><i class="ion-ios-wineglass-outline"></i></div>
                         <h4 class="title"><a href="">Licoreria</a></h4>
-                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                        <p class="description">Tenemos una amplia seleccion de licores que iran acompañados de la bella prepago que hayas escogido, podras verlos en la seccion tienda -> licores</p>
                     </div>
                     <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
                         <div class="icon"><i class="ion-link"></i></div>
                         <h4 class="title"><a href="">Juguetes sexuales</a></h4>
-                        <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                        <p class="description">Para que el juego sea mas entretenido ofrecemos tambien tienda erotica, donde encontraras geles y juguetes de todo tipo.</p>
                     </div>
                     <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
                         <div class="icon"><i class="ion-ios-heart-outline"></i></div>
                         <h4 class="title"><a href="">Disfraces eroticos</a></h4>
-                        <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                        <p class="description">Tambien nuestras chicas ofrecen juego de roles, solo tendras que pagar el extra que cuesta el alquiler de los diferentes disfraces que tenemos en nuestra tienda seccion disfraces</p>
                     </div>
                     <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
                         <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
                         <h4 class="title"><a href="">Servicio a domicilio</a></h4>
-                        <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        <p class="description">Como es de esperar, todas nuestras prepagos cuentan con servicio a domicilio para gran parte de la ciudad de bogota, para que disfrutes sin moverte de casa.</p>
                     </div>
                     <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
                         <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
-                        <h4 class="title"><a href="">Hoteles Asociados</a></h4>
-                        <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                        <h4 class="title"><a href="">Moteles Asociados</a></h4>
+                        <p class="description">Ademas, si no deseas que lleguen a tu residencia, existe el servicio para desplazarse al motel que tu escogas. donde te estara esperando muy ganosa y caliente.</p>
                     </div>
                     <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
                         <div class="icon"><i class="ion-ios-people-outline"></i></div>
                         <h4 class="title"><a href="">Cualquier cosa que desee</a></h4>
-                        <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+                        <p class="description">Si tienes otra peticion que no cubrimos, dejala en el apartado de extras y haremos lo posible por cumplirte tu fantasia.</p>
                     </div>
 
                 </div>
