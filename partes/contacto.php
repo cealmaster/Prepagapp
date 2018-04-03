@@ -3,7 +3,7 @@
 
                 <div class="section-header">
                     <h3>Contactanos</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                    <p>¿Tienes segerencias, quejas, reclamos o cualquier peticion extra? Envianos un correo, llamanos o escribenos!</p>
                 </div>
 
                 <div class="row contact-info">
@@ -49,14 +49,14 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Servicio a escoger" data-rule="minlen:4" data-msg="Porfavor escoge un servicio valido" />
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Especifica si es queja, sugerencia etc.." data-rule="minlen:4" data-msg="Porfavor escoge un servicio valido" />
                             <div class="validation"></div>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Porfavor especifica el servicio deseado" placeholder="Especifica tu servicio"></textarea>
+                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Porfavor especifica tu petición" placeholder="Especifica tu peticion"></textarea>
                             <div class="validation"></div>
                         </div>
-                        <div class="text-center"><button type="submit">Pedir Puta</button></div>
+                        <div class="text-center"><button type="submit">Enviar</button></div>
                     </form>
                 </div>
 

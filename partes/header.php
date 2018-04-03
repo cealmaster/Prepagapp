@@ -4,8 +4,6 @@
       <div id="logo" class="pull-left">
       <a href="index.php" class="scrollto"><img style="display: inline; height: 50px;" src="img/log.png" alt="Logo Prepagapp" title="Logo Prepagapp" /></a>  
         <h1><a href="index.php" class="scrollto">Prepagapp</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        
       </div>
 
       <nav id="nav-menu-container">

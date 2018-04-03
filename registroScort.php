@@ -9,6 +9,21 @@
 <?php 
 		include './partes/header.php';
 		include './partes/conexion.php';
+		function obtenerCategorias(){
+			$conexion=mysqli_connect("localhost","root","","prepagapp") or
+    		die("Problemas con la conexión");
+        	$registros=mysqli_query($conexion,"select nombrecaracteristica from caracteristicas") or die("Problemas en el select:".mysqli_error($conexion));
+        	$numeroRegistros = mysqli_num_rows($registros);
+			if ($numeroRegistros!=0) {
+				while ($reg=mysqli_fetch_array($registros)) {
+					$nombreCaracteristica = $reg['nombrecaracteristica'];
+					echo "<div class=\"form-check form-check-inline\">";
+					echo"<input class=\"form-check-input\" type=\"checkbox\" name=\"cara[]\" id=\"".$nombreCaracteristica."\" value=\"".$nombreCaracteristica."\">";
+					echo "<label class=\"form-check-label\" for=\"".$nombreCaracteristica."\">".$nombreCaracteristica."</label>";
+					echo"</div>";			
+				}
+			}
+		}
 		if (isset($_SESSION["session_username"])) {
 			header("location: index.php");
 		}
@@ -24,9 +39,9 @@
 					}
 					
 					$uploadedfileload="true";
-					if (!($_FILES['fotoperfil']['type'] =="image/jpeg" OR $_FILES['fotoperfil']['type'] =="image/gif")){
+					if (!($_FILES['fotoperfil']['type'] =="image/jpeg" OR $_FILES['fotoperfil']['type'] =="image/gif" OR $_FILES['fotoperfil']['type'] =="image/png")){
 						$msg ="";
-						$msg=$msg." Tu archivo tiene que ser JPG o GIF. Otros archivos no son permitidos<BR>";
+						$msg=$msg." Tu archivo tiene que ser JPG o GIF o PNG. Otros archivos no son permitidos<BR>";
 						$uploadedfileload="false";
 					}
 					$target_path = $carpeta;
@@ -36,6 +51,23 @@
 							$registros= mysqli_query($conexion,"insert into puta (nombreputa, descripcion, linkfotoperfil, medidas, correoputa, preciohora, telefonoputa, nicknameputa, contrasenaputa, videoputa) values ('$_REQUEST[nombre]','$_REQUEST[descripcion]','$target_path','$_REQUEST[medidas]', '$_REQUEST[correo]', '$_REQUEST[precio]', '$_REQUEST[telefono]', '$_REQUEST[nickname]','$_REQUEST[contrasena]', '$_REQUEST[video]')") or die("Problemas en el insert".mysqli_error($conexion));
 							if ($registros) {
 								$mensaje = "cuenta creada exitosamente!";
+								$consulta=mysqli_query($conexion, "select idputa from puta where nicknameputa='".$nickname."'");
+								$fila = mysqli_fetch_row($consulta);
+								$idputa = $fila[0];	
+								//se suben a la BD sus caracterisiticas
+								if (!empty($_POST['cara'])) {
+									foreach($_POST['cara'] as $seleccionada) {
+										$consulta2=mysqli_query($conexion, "select idcaracteristica from caracteristicas where nombrecaracteristica='".$seleccionada."'");
+										$fila2 = mysqli_fetch_row($consulta2);
+										$idCaracteristica = $fila2[0];
+										$insercionCaracteristicas = mysqli_query($conexion, "insert into putacaracteristicas (idputa, idcaracteristica) values (".$idputa.",'".$idCaracteristica."')");
+										if ($insercionCaracteristicas) {
+										}else {
+											echo "no se ingreso";
+										}
+									}
+								}
+								
 								//Como el elemento es un arreglos utilizamos foreach para extraer todos los valores
 								foreach($_FILES["fotos"]['tmp_name'] as $key => $tmp_name){
 									echo "entro";
@@ -49,15 +81,11 @@
 										//Movemos y validamos que el archivo se haya cargado correctamente
 										//El primer campo es el origen y el segundo el destino
 										if(move_uploaded_file($source, $target_path2)) {	
-											echo "El archivo $filename se ha almacenado en forma exitosa.<br>";
-											$consulta=mysqli_query($conexion, "select idputa from puta where nicknameputa='".$nickname."'");
-											$fila = mysqli_fetch_row($consulta);
-											$idputa = $fila[0];			
+											echo "El archivo $filename se ha almacenado en forma exitosa.<br>";		
 											$registros= mysqli_query($conexion,"insert into fotos (idputa, linkfoto) values ($idputa, '$target_path2')") or die("Problemas en el insert ".mysqli_error($conexion));
 											if ($registros) {
-												echo "fotos insertadas correctamente en la BD";
 											}else{
-												$mensaje = "error al ingresar los datos";
+												$mensaje = "error al ingresar las fotos de la galeria";
 											}
 											} else {	
 											echo "Ha ocurrido un error, por favor inténtelo de nuevo.<br>";
@@ -65,7 +93,7 @@
 									}
 								}
 							}else{
-								$mensaje = "error al ingresar los datos";
+								$mensaje = "error al ingresar la prepago";
 							}
 						} 
 						else{
@@ -109,6 +137,11 @@
 						<label for="descripcion">Ingresa una descripcion (quien eres, que haces, describete):</label>
 						<textarea class="form-control" placeholder="Ingresa tu descripcion" name="descripcion" id="descripcion" cols="30" rows="5"></textarea>
 						
+					</div>
+					<div class="form-group">
+						<label for="caracteristicas">Ingresa tus Caracteristicas: </label>
+						<br>
+						<?php obtenerCategorias(); ?>
 					</div>
 					<div class="form-group">
 						<label for="medidas">(opcional) Ingresa tus medidas (ej: 90-60-90) :</label>

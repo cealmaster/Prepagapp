@@ -1,9 +1,5 @@
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<meta content="prepagos, putas a domicilio" name="keywords">
-	<meta content="Prepagos a domicilio" name="subject" >
-    <meta content="M4L Studios" name="copyright">
-    <meta content="http://www.prepagapp.com" name="url">
-	<meta content="Las mejores prepagos y putas en Bogota a domicilio, dispuestas a satisfacer tus deseos mas calientes." name="description">
+	<meta content="M4L Studios" name="copyright">
 	<!-- Iconos miniaturas -->
 	<link href="img/favicon.png" rel="icon">
 	<link href="img/apple-touch-icon.png" rel="apple-touch-icon">

@@ -31,6 +31,14 @@
 				echo "<div class=\"portfolio-info\">";
 				echo "<h4><a href=\"chicaespecifica.php\">".$nombreChica."</a></h4>";
 				echo "<p>".$descripcion."</p>";
+				
+				if ($caracteristicas!=null) {
+					$caracter = explode(",", $caracteristicas);
+					foreach($caracter as $caracteristica){
+						echo "<span class=\"badge badge-danger colortags\">".$caracteristica."</span>  ";
+					}
+				}
+				echo "<br>";
 				echo "</div></div></div>";      
             }
             mysqli_close($conexion);

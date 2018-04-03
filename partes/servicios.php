@@ -3,7 +3,7 @@
 
                 <header class="section-header wow fadeInUp">
                     <h3>Servicios</h3>
-                    <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.</p>
+                    <p>Ademas de nuestras prepagos contamos con multiples servicios para que tu experiencia sea unica y excitante. desde licores hasta desplazamientos.</p>
                 </header>
 
                 <div class="row">

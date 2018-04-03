@@ -4,16 +4,15 @@
                 <div class="row">
 
                     <div class="col-lg-3 col-md-6 footer-info">
-                        <h3>Scorts Premium</h3>
-                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat
-                            mauris nunc congue.</p>
+                        <h3>Prepagapp</h3>
+                        <p>Si te gusto lo que viste, recomiendanos a tus amigos. De esta forma podremos mejorar nuestros servicios.</p>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Link mas visitados</h4>
+                        <h4>Links mas visitados</h4>
                         <ul>
-                            <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
-                            <li><i class="ion-ios-arrow-right"></i> <a href="#">Nuestras Chicas</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="#">Inicio</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="#">Nuestras Prepagos y puas</a></li>
                             <li><i class="ion-ios-arrow-right"></i> <a href="#">Servicios</a></li>
                             <li><i class="ion-ios-arrow-right"></i> <a href="#">Terminos y condiciones</a></li>
                             <li><i class="ion-ios-arrow-right"></i> <a href="#">Politica de privacidad de la informacion</a></li>
@@ -21,7 +20,7 @@
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-contact">
-                        <h4>Contactanos</h4>
+                        <h4>Contactanos:</h4>
                         <p>
                             Calle Falsa 123 <br> Bogota, Bogota D.C.<br> Colombia <br>
                             <strong>Telefono:</strong> +57 312 371 0865<br>
@@ -38,11 +37,11 @@
 
                     </div>
 
-                    <div class="col-lg-3 col-md-6 footer-newsletter">
-                        <h4>Nuevas puticas</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+                    <div class="col-lg-3 col-md-6 footer-nsewsletter">
+                        <h4>Trabaja con nosotros</h4>
+                        <p>¿quieres tener ingresos espectaculares, tienes un hermoso cuerpo y una mente sucia?. Ingresa tu correo electronico de contacto y te daremos toda la informacion para trabajar con nosotros.</p>
                         <form action="" method="post">
-                            <input type="email" name="email"><input type="submit" value="Suscribete">
+                            <input class="form-control d-inline" type="email" name="email" placeholder="Ingresa tu Correo"><hr> <div class="trabajaconnosotros"><input class="btn btn-dark" type="submit" value="Enviar"></div>
                         </form>
                     </div>
 
@@ -52,7 +51,7 @@
 
         <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong>Ivan Ruiz</strong>. Todos los derechos reservados
+                &copy; Copyright <strong>M4L Studios</strong>. Todos los derechos reservados
             </div>
         </div>
     </footer>
