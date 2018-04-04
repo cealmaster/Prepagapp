@@ -24,6 +24,21 @@
 				}
 			}
 		}
+		function obtenerServicios(){
+			$conexion=mysqli_connect("localhost","root","","prepagapp") or
+    		die("Problemas con la conexión");
+        	$registros=mysqli_query($conexion,"select nombreservicio from servicios") or die("Problemas en el select:".mysqli_error($conexion));
+        	$numeroRegistros = mysqli_num_rows($registros);
+			if ($numeroRegistros!=0) {
+				while ($reg=mysqli_fetch_array($registros)) {
+					$nombreServicio = $reg['nombreservicio'];
+					echo "<div class=\"form-check form-check-inline\">";
+					echo"<input class=\"form-check-input\" type=\"checkbox\" name=\"servi[]\" id=\"".$nombreServicio."\" value=\"".$nombreServicio."\">";
+					echo "<label class=\"form-check-label\" for=\"".$nombreServicio."\">".$nombreServicio."</label>";
+					echo"</div>";			
+				}
+			}
+		}
 		if (isset($_SESSION["session_username"])) {
 			header("location: index.php");
 		}
@@ -63,11 +78,25 @@
 										$insercionCaracteristicas = mysqli_query($conexion, "insert into putacaracteristicas (idputa, idcaracteristica) values (".$idputa.",'".$idCaracteristica."')");
 										if ($insercionCaracteristicas) {
 										}else {
-											echo "no se ingreso";
+											echo "no se ingreso las caracteristicas en la BD";
 										}
 									}
 								}
-								
+								//se suben a la BD los servicios que ofrece
+								if (!empty($_POST['servi'])) {
+									foreach($_POST['servi'] as $seleccionada2) {
+										$consulta3=mysqli_query($conexion, "select idServicio from servicios where nombreservicio='".$seleccionada2."'");
+										$fila3 = mysqli_fetch_row($consulta3);
+										$idServicio = $fila3[0];
+										$insercionServicios = mysqli_query($conexion, "insert into putaServicios (idputa, idServicio) values (".$idputa.",'".$idServicio."')");
+										if ($insercionServicios) {
+											echo "si ingreso el valor".$seleccionada2;
+										}else {
+											echo "no se ingreso los servicios en la BD";
+										}
+									}
+								}
+
 								//Como el elemento es un arreglos utilizamos foreach para extraer todos los valores
 								foreach($_FILES["fotos"]['tmp_name'] as $key => $tmp_name){
 									echo "entro";
@@ -142,6 +171,11 @@
 						<label for="caracteristicas">Ingresa tus Caracteristicas: </label>
 						<br>
 						<?php obtenerCategorias(); ?>
+					</div>
+					<div class="form-group">
+						<label for="servicios">Ingresa los servicios que ofreces: </label>
+						<br>
+						<?php obtenerServicios(); ?>
 					</div>
 					<div class="form-group">
 						<label for="medidas">(opcional) Ingresa tus medidas (ej: 90-60-90) :</label>
