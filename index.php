@@ -31,7 +31,7 @@
     ?>
     </main>
     <?php include "./partes/footer.php"; ?>
-
+    <p>andres es bien gay</p>
 </body>
 
 </html>
