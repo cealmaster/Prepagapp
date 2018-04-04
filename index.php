@@ -31,7 +31,7 @@
     ?>
     </main>
     <?php include "./partes/footer.php"; ?>
-       
+    
 </body>
 
 </html>
