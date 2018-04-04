@@ -6,7 +6,7 @@
 	<meta content="Prepagos a domicilio" name="subject" >
     <meta content="http://www.prepagapp.com" name="url">
     <meta content="Las mejores prepagos y putas en Bogota a domicilio, dispuestas a satisfacer tus deseos mas calientes." name="description">
-    <title>Prepagapp</title>
+    <title>Prepagapp--prueba</title>
     <?php include "./partes/head.php"; ?>
 </head>
 
