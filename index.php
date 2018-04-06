@@ -12,6 +12,7 @@
 
 <body>
     <?php 
+        
         include "./partes/funciones.php";
         include "./partes/header.php";
         include "./partes/conexion.php";

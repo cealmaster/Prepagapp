@@ -9,6 +9,7 @@
 <?php 
 		include './partes/header.php';
 		include './partes/conexion.php';
+		include './partes/creacionChica.php';
 		function obtenerCategorias(){
 			$conexion=mysqli_connect("localhost","root","","prepagapp") or
     		die("Problemas con la conexión");
@@ -121,6 +122,7 @@
 										}
 									}
 								}
+								crearArchivoScort($nickname);
 							}else{
 								$mensaje = "error al ingresar la prepago";
 							}
@@ -165,7 +167,6 @@
 					<div class="form-group">
 						<label for="descripcion">Ingresa una descripcion (quien eres, que haces, describete):</label>
 						<textarea class="form-control" placeholder="Ingresa tu descripcion" name="descripcion" id="descripcion" cols="30" rows="5"></textarea>
-						
 					</div>
 					<div class="form-group">
 						<label for="caracteristicas">Ingresa tus Caracteristicas: </label>
