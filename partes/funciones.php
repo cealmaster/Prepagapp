@@ -2,7 +2,7 @@
 	function imprimirPutas(){
 		$conexion=mysqli_connect("localhost","root","","prepagapp") or
     	die("Problemas con la conexión");
-        $registros=mysqli_query($conexion,"select p.idputa, p.nombreputa, p.linkfotoperfil, p.descripcion, GROUP_CONCAT(c.nombrecaracteristica) as caracteristicas from puta p LEFT JOIN putacaracteristicas pc ON p.idputa=pc.idputa LEFT JOIN caracteristicas c ON c.idcaracteristica=pc.idcaracteristica GROUP BY p.idputa") or die("Problemas en el select:".mysqli_error($conexion));
+        $registros=mysqli_query($conexion,"select p.idputa, p.nombreputa, p.linkfotoperfil, p.descripcion, p.nicknameputa, GROUP_CONCAT(c.nombrecaracteristica) as caracteristicas from puta p LEFT JOIN putacaracteristicas pc ON p.idputa=pc.idputa LEFT JOIN caracteristicas c ON c.idcaracteristica=pc.idcaracteristica GROUP BY p.idputa") or die("Problemas en el select:".mysqli_error($conexion));
         $numeroRegistros = mysqli_num_rows($registros);
         $contador=0;
         if ($numeroRegistros!=0) {
@@ -11,6 +11,7 @@
             	$foto = $reg['linkfotoperfil'];
 				$descripcion = $reg['descripcion'];
 				$caracteristicas = $reg['caracteristicas'];
+				$nickname = $reg['nicknameputa'];
 				if ($caracteristicas=== null) {
 					echo "";
 				}
@@ -25,11 +26,11 @@
 				echo "<div class=\"portfolio-wrap\">";
 				echo "<figure>";
 				echo "<img src=\"".$foto."\" class=\"img-fluid\" alt=\"\">";
-				echo "<a href=\"".$foto."\" data-lightbox=\"portfolio\" data-title=\"App 1\" class=\"link-preview\" title=\"Vista Previa\"><i class=\"ion ion-eye\"></i></a>";
-				echo "<a href=\"chicaespecifica.php\" class=\"link-details\" title=\"Mas Detalles\"><i class=\"ion ion-android-open\"></i></a>";
+				echo "<a href=\"".$foto."\" data-lightbox=\"portfolio\" class=\"link-preview\" title=\"Vista Previa\"><i class=\"ion ion-eye\"></i></a>";
+				echo "<a href=\"".$nickname.".php\" class=\"link-details\" title=\"Mas Detalles\"><i class=\"ion ion-android-open\"></i></a>";
 				echo "</figure>";
 				echo "<div class=\"portfolio-info\">";
-				echo "<h4><a href=\"chicaespecifica.php\">".$nombreChica."</a></h4>";
+				echo "<h4><a href=\"".$nickname.".php\">".$nombreChica."</a></h4>";
 				echo "<p>".$descripcion."</p>";
 				
 				if ($caracteristicas!=null) {
