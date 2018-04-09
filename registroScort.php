@@ -64,7 +64,7 @@
 					$target_path = $target_path ."/perfil.jpg"; 
 					if($uploadedfileload=="true"){
 						if(move_uploaded_file($_FILES['fotoperfil']['tmp_name'], $target_path)) {
-							$registros= mysqli_query($conexion,"insert into puta (nombreputa, descripcion, linkfotoperfil, medidas, correoputa, preciohora, telefonoputa, nicknameputa, contrasenaputa, videoputa) values ('$_REQUEST[nombre]','$_REQUEST[descripcion]','$target_path','$_REQUEST[medidas]', '$_REQUEST[correo]', '$_REQUEST[precio]', '$_REQUEST[telefono]', '$_REQUEST[nickname]','$_REQUEST[contrasena]', '$_REQUEST[video]')") or die("Problemas en el insert".mysqli_error($conexion));
+							$registros= mysqli_query($conexion,"insert into puta (nombreputa, descripcion, linkfotoperfil, edadputa, correoputa, preciohora, telefonoputa, nicknameputa, contrasenaputa, videoputa, localidad) values ('$_REQUEST[nombre]','$_REQUEST[descripcion]','$target_path','$_REQUEST[edad]', '$_REQUEST[correo]', '$_REQUEST[precio]', '$_REQUEST[telefono]', '$_REQUEST[nickname]','$_REQUEST[contrasena]', '$_REQUEST[video]', '$_REQUEST[localidad]')") or die("Problemas en el insert".mysqli_error($conexion));
 							if ($registros) {
 								$mensaje = "cuenta creada exitosamente!";
 								$consulta=mysqli_query($conexion, "select idputa from puta where nicknameputa='".$nickname."'");
@@ -100,18 +100,15 @@
 
 								//Como el elemento es un arreglos utilizamos foreach para extraer todos los valores
 								foreach($_FILES["fotos"]['tmp_name'] as $key => $tmp_name){
-									echo "entro";
 									//Validamos que el archivo exista
 									if($_FILES["fotos"]["name"][$key]) {
-										echo "volvio a entrar";
 										$filename = $_FILES["fotos"]["name"][$key]; //Obtenemos el nombre original del archivo
 										$source = $_FILES["fotos"]["tmp_name"][$key]; //Obtenemos un nombre temporal del archivo
 										$directorio = $carpeta; //Declaramos un  variable con la ruta donde guardaremos los archivos	
 										$target_path2 = $directorio.'/'.$filename; //Indicamos la ruta de destino, así como el nombre del archivo
 										//Movemos y validamos que el archivo se haya cargado correctamente
 										//El primer campo es el origen y el segundo el destino
-										if(move_uploaded_file($source, $target_path2)) {	
-											echo "El archivo $filename se ha almacenado en forma exitosa.<br>";		
+										if(move_uploaded_file($source, $target_path2)) {		
 											$registros= mysqli_query($conexion,"insert into fotos (idputa, linkfoto) values ($idputa, '$target_path2')") or die("Problemas en el insert ".mysqli_error($conexion));
 											if ($registros) {
 											}else{
@@ -179,8 +176,12 @@
 						<?php obtenerServicios(); ?>
 					</div>
 					<div class="form-group">
-						<label for="medidas">(opcional) Ingresa tus medidas (ej: 90-60-90) :</label>
-						<input type="text" class="form-control" placeholder="Ingresa tus medidas" name="medidas">
+						<label for="edad">(opcional) Ingresa tu edad (ej: 18) :</label>
+						<input type="number" class="form-control" placeholder="Ingresa tu edad" name="edad">
+					</div>
+					<div class="form-group">
+						<label for="localidad">(opcional) Ingresa tu localidad (ej: Barrios Unidos) :</label>
+						<input type="text" class="form-control" placeholder="Ingresa tu Localidad" name="localidad">
 					</div>
 
 					<div class="form-group">

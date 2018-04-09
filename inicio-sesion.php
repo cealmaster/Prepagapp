@@ -31,7 +31,24 @@
 						header("location: index.php");
 					} 
 				}else{
+					$registros2=mysqli_query($conexion,"select nombreputa, nicknameputa, contrasenaputa from puta where nicknameputa= '$_REQUEST[nickname]' and contrasenaputa='$_REQUEST[contrasena]'") or die("Problemas en el select:".mysqli_error($conexion));
+					$numeroRegistros2 = mysqli_num_rows($registros2);
+					$mensaje = "Nombre de usuario o Contraseña Incorrectos!";
+					if ($numeroRegistros2!=0) {
+						while ($reg=mysqli_fetch_array($registros2)){
+							  $dbnickname = $reg['nicknameputa'];
+							  $dbcontrasena = $reg['contrasenaputa'];
+							  $dbnombre = $reg['nombreputa'];
+						}
+						mysqli_close($conexion);
+						if ($usuario == $dbnickname && $password == $dbcontrasena) {
+							$_SESSION['session_username']=$usuario;
+							$_SESSION['session_name']=$dbnombre;
+							header("location: index.php");
+						} 
+					}else{
 						$mensaje = "Nombre de usuario o Contraseña Incorrectos!";
+					}
 				}
 			}else{
 				$mensaje = "Todos los campos son requeridos!";

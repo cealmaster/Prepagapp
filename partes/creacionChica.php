@@ -8,11 +8,13 @@
         $nombre = $fila[1];
         $descripcion = $fila[2];
         $fotoperfil = $fila[3];
-        $medidas = $fila[4];
+        $edad = $fila[4];
         $correo = $fila[5];
         $precio = $fila[6];
         $telefono = $fila[7];
         $video = $fila[10];
+        $prioridad = $fila[11];
+        $localidad = $fila[12];
         
         
         $nombre_archivo = $nickname.".php"; 
@@ -67,9 +69,10 @@
                     </div>
                     <div class=\"col-lg-8 col-md-6\">
                         <div class=\"wow fadeInRight\">
-                            <p class=\"texto\"><b class=\"subtitulo\">Edad:</b> 18 años</p>
-                            <p class=\"texto\"><b class=\"subtitulo\">Medidas:</b> ".mostrarMedidas($nickname)."</p>
-                            <p class=\"texto\"><b class=\"subtitulo\">descripció:</b> ".$descripcion."</p>
+                            <p class=\"texto\"><b class=\"subtitulo\">Localidad:</b> ".$localidad."</p>
+                            <p class=\"texto\"><b class=\"subtitulo\">Edad:</b> ".$edad." Años</p>
+                            <p class=\"texto\"><b class=\"subtitulo\">Precio: $</b> ".$precio." por hora</p>
+                            <p class=\"texto\"><b class=\"subtitulo\">descripción:</b> ".$descripcion."</p>
                             <p class=\"texto\"><b class=\"subtitulo\">nacionalidad: </b> colombiana</p>
                         </div>
                     </div>
@@ -99,7 +102,7 @@
     function mostrarMedidas($nickname){
         $conexion=mysqli_connect("localhost","root","","prepagapp") or
             die("Problemas con la conexión");
-        $consulta=mysqli_query($conexion, "select medidas from puta where nicknameputa='".$nickname."'");
+        $consulta=mysqli_query($conexion, "select edadputa from puta where nicknameputa='".$nickname."'");
         $fila = mysqli_fetch_row($consulta);
         $medidas = $fila[0];
         return $medidas;	
