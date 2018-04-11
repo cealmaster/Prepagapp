@@ -11,7 +11,7 @@
 		include './partes/conexion.php';
 		include './partes/creacionChica.php';
 		function obtenerCategorias(){
-			$conexion=mysqli_connect("localhost","root","","prepagapp") or
+			$conexion=mysqli_connect("localhost","prepagap_root","camilobasededatos","prepagap_prepagapp") or
     		die("Problemas con la conexión");
         	$registros=mysqli_query($conexion,"select nombrecaracteristica from caracteristicas") or die("Problemas en el select:".mysqli_error($conexion));
         	$numeroRegistros = mysqli_num_rows($registros);
@@ -26,7 +26,7 @@
 			}
 		}
 		function obtenerServicios(){
-			$conexion=mysqli_connect("localhost","root","","prepagapp") or
+			$conexion=mysqli_connect("localhost","prepagap_root","camilobasededatos","prepagap_prepagapp") or
     		die("Problemas con la conexión");
         	$registros=mysqli_query($conexion,"select nombreservicio from servicios") or die("Problemas en el select:".mysqli_error($conexion));
         	$numeroRegistros = mysqli_num_rows($registros);

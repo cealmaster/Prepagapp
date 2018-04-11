@@ -1,6 +1,6 @@
 <?php 
 	function imprimirPutas(){
-		$conexion=mysqli_connect("localhost","root","","prepagapp") or
+		$conexion=mysqli_connect("localhost","prepagap_root","camilobasededatos","prepagap_prepagapp") or
     	die("Problemas con la conexión");
         $registros=mysqli_query($conexion,"select p.idputa, p.nombreputa, p.linkfotoperfil, p.descripcion, p.nicknameputa, GROUP_CONCAT(c.nombrecaracteristica) as caracteristicas from puta p LEFT JOIN putacaracteristicas pc ON p.idputa=pc.idputa LEFT JOIN caracteristicas c ON c.idcaracteristica=pc.idcaracteristica GROUP BY p.idputa") or die("Problemas en el select:".mysqli_error($conexion));
         $numeroRegistros = mysqli_num_rows($registros);
@@ -50,7 +50,7 @@
 	}
 	
 	function mostrarCategorias(){
-		$conexion=mysqli_connect("localhost","root","","prepagapp") or
+		$conexion=mysqli_connect("localhost","prepagap_root","camilobasededatos","prepagap_prepagapp") or
     	die("Problemas con la conexión");
         $registros=mysqli_query($conexion,"select c.nombrecaracteristica, GROUP_CONCAT(p.idputa) as putasasociadas from caracteristicas c LEFT JOIN putacaracteristicas pc ON c.idcaracteristica=pc.idcaracteristica LEFT JOIN puta p ON p.idputa=pc.idputa GROUP BY c.idcaracteristica") or die("Problemas en el select:".mysqli_error($conexion));
         $numeroRegistros = mysqli_num_rows($registros);

@@ -1,6 +1,6 @@
 <?php 
     function crearArchivoScort($nickname){
-        $conexion=mysqli_connect("localhost","root","","prepagapp") or
+        $conexion=mysqli_connect("localhost","prepagap_root","camilobasededatos","prepagap_prepagapp") or
             die("Problemas con la conexión");
         $consulta=mysqli_query($conexion, "select * from puta where nicknameputa='".$nickname."'");
         $fila = mysqli_fetch_row($consulta);
@@ -100,7 +100,7 @@
         }
     }
     function mostrarMedidas($nickname){
-        $conexion=mysqli_connect("localhost","root","","prepagapp") or
+        $conexion=mysqli_connect("localhost","prepagap_root","camilobasededatos","prepagap_prepagapp") or
             die("Problemas con la conexión");
         $consulta=mysqli_query($conexion, "select edadputa from puta where nicknameputa='".$nickname."'");
         $fila = mysqli_fetch_row($consulta);
@@ -109,7 +109,7 @@
     }
     function desplegarGaleria($nickname){
         $retorno="";
-        $conexion=mysqli_connect("localhost","root","","prepagapp") or
+        $conexion=mysqli_connect("localhost","prepagap_root","camilobasededatos","prepagap_prepagapp") or
             die("Problemas con la conexión");
         $registros=mysqli_query($conexion,"select f.linkfoto from fotos f, puta p WHERE p.nicknameputa ='".$nickname."' and p.idputa=f.idputa") or die("Problemas en el select:".mysqli_error($conexion));
         $numeroRegistros = mysqli_num_rows($registros);
