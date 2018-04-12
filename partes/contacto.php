@@ -20,7 +20,7 @@
                         <div class="contact-phone">
                             <i class="ion-ios-telephone-outline"></i>
                             <h3>Telefono</h3>
-                            <p><a href="tel:+573123710865">+57 312 371 0865</a></p>
+                            <p><a href="tel:+573123710865" itemprop="telephone" content="+573123710865">+57 312 371 0865</a></p>
                         </div>
                     </div>
 
@@ -28,7 +28,7 @@
                         <div class="contact-email">
                             <i class="ion-ios-email-outline"></i>
                             <h3>Email</h3>
-                            <p><a href="mailto:v_ani_ivan@hotmail.com">v_ani_ivan@hotmail.com</a></p>
+                            <p><a href="mailto:v_ani_ivan@hotmail.com" itemprop="email">v_ani_ivan@hotmail.com</a></p>
                         </div>
                     </div>
 

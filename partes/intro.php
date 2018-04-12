@@ -11,7 +11,7 @@
                         <div class="carousel-container">
                             <div class="carousel-content">
                                 <h2>Prepagos y Putas a domicilio</h2>
-                                <p>LLegamos a cualquier parte de bogota, con las mejores chicas del mercado.</p>
+                                <p itemprop="description">Prepagapp es una aplicacion web diseñada para satisfacer tu necesidad de placer en cualquier moemento y lugar. LLegamos a cualquier parte de bogota, con las mejores chicas del mercado.</p>
                                 <a href="#featured-services" class="btn-get-started scrollto">Mira nuestras prepagos</a>
                             </div>
                         </div>
