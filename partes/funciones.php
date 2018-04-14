@@ -79,4 +79,8 @@
 		return $retorno;
 	}
 
+	function enviarMail($destino, $asunto, $cuerpo){
+		
+	}
+
  ?>

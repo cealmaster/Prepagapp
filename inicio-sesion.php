@@ -1,15 +1,18 @@
 <!DOCTYPE html>
+<?php 
+	session_start();
+ ?>
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Iniciar Sesion | Prepagapp</title>
 	<?php include './partes/head.php' ?>
 </head>
 <body>
 	<?php 
 		include './partes/header.php'; 
 		include './partes/conexion.php';
-		if(isset($_SESSION["session_username"])){
+		if(isset($_SESSION['session_username'])){
 			header("location: index.php");
 		}
 		if (isset($_POST["login"])) {
