@@ -1,8 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
+<<<<<<< HEAD
 	<title>Registro de Cliente</title>
+=======
+	<meta content="prepagapp, prepagos, putas a domicilio, registro prepagapp" name="keywords">
+	<meta content="Prepagos a domicilio" name="subject" >
+    <meta content="http://www.prepagapp.com/registrocliente.php" name="url">
+    <meta content="Las mejores prepagos y putas en Bogota a domicilio, dispuestas a satisfacer tus deseos mas calientes." name="description">
+	<title>Document</title>
+>>>>>>> 2b0e3b20197e6191404ef79911994bc97f94e074
 	<?php include './partes/head.php'; ?>
 </head>
 <body>

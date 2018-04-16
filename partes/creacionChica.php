@@ -12,6 +12,7 @@
         $correo = $fila[5];
         $precio = $fila[6];
         $telefono = $fila[7];
+        $nicknameputa = $fila[8];
         $video = $fila[10];
         $prioridad = $fila[11];
         $localidad = $fila[12];
@@ -26,13 +27,13 @@
         if($archivo = fopen($nombre_archivo, "a")){
             if(fwrite($archivo, 
             "<!DOCTYPE html> 
-            <html lang=\"en\"> 
+            <html lang=\"es\"> 
             <head>
             <meta charset=\"utf-8\">
-            <title>".$nombre."</title>
+            <title>".$nombre." | Prepagapp</title>
             <meta content=\"width=device-width, initial-scale=1.0\" name=\"viewport\">
-            <meta content=\"\" name=\"keywords\">
-            <meta content=\"\" name=\"description\">
+            <meta content=\"".$nicknameputa.", prepagapp, prepagos a domicilio, putas, putas a domicilio, prostitutas\" name=\"keywords\">
+            <meta content=\"".$descripcion."\" name=\"description\">
             <!-- Favicons -->
             <link href=\"img/favicon.png\" rel=\"icon\">
             <link href=\"img/apple-touch-icon.png\" rel=\"apple-touch-icon\">
