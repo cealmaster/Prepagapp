@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Inicia Sesion - Prepagapp</title>
 	<?php include './partes/head.php' ?>
 </head>
 <body>
