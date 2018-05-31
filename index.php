@@ -5,9 +5,13 @@
 <html lang="es">
 <head> 
     <meta charset="utf-8">
+<<<<<<< HEAD
+    <meta content="prepagapp, prepagos, putas a domicilio, prepagos a domicilio" name="keywords">
+=======
     <meta content="prepagapp, prepagos, putas a domicilio" name="keywords">
+>>>>>>> 2b0e3b20197e6191404ef79911994bc97f94e074
 	<meta content="Prepagos a domicilio" name="subject" >
-    <meta content="http://www.prepagapp.com" name="url">
+    <meta content="https://www.prepagapp.com" name="url">
     <meta content="Las mejores prepagos y putas en Bogota a domicilio, dispuestas a satisfacer tus deseos mas calientes." name="description">
     <title>Prepagapp | Prepagos y putas a Domicilio</title>
     <?php include "./partes/head.php"; ?>

@@ -5,7 +5,11 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+<<<<<<< HEAD
+	<title>Inicia Sesion - Prepagapp</title>
+=======
 	<title>Iniciar Sesion | Prepagapp</title>
+>>>>>>> 2b0e3b20197e6191404ef79911994bc97f94e074
 	<?php include './partes/head.php' ?>
 </head>
 <body>
